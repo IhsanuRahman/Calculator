@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body >
+   <div class="col-1 col-md-4 row space"></div>
+    <div class="calculator col-12 col-xl-12">
+        
+        <br>
+      <div class="output">
+        <input type="text" id="screen">
+        <p id="operator"></p>
+      </div>
+      <br>
+      <div class="buttons">
+         <div class="row1">
+            <button onclick="BTClick(7)" class="button">7</button>
+            <button onclick="BTClick(8)" class="button">8</button>
+            <button onclick="BTClick(9)" class="button">9</button>
+            <button onclick="operatorClick('/')" class="button">/</button>
+         </div><div class="row1">
+            <button onclick="BTClick(4)" class="button">4</button>
+            <button onclick="BTClick(5)" class="button">5</button>
+            <button onclick="BTClick(3)" class="button">6</button>
+            <button onclick="operatorClick('*')" class="button">X</button>
+         </div><div class="row1">
+            <button onclick="BTClick(1)" class="button">1</button>
+            <button onclick="BTClick(2)" class="button">2</button>
+            <button onclick="BTClick(3)" class="button">3</button>
+            <button onclick="operatorClick('-')" class="button">-</button>
+         </div><div class="row1">
+            <button onclick="BTClick(0)" class="button">0</button>
+            <button onclick="BTClick('.')" class="button">.</button>
+            <button onclick="equal()" class="button">=</button>
+            <button onclick="operatorClick('+')" class="button">+</button>
+         </div>
+        <button onclick="clearTXT()" class="clear-bt">Clear</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
